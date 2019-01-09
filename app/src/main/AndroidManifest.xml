@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="ru.startandroid.doctorapp">
+
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <application
+            android:allowBackup="true"
+            android:icon="@drawable/plussign"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+            <activity android:name=".ui.MainActivity" />
+            <activity android:name=".ui.AppointmentsActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ui.MainActivity" />
+            </activity>
+            <activity android:name=".ui.AppointmentFormActivity">
+            </activity>
+            <activity android:name=".ui.FindDoctorActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ui.MainActivity" />
+            </activity>
+            <activity android:name=".ui.HealthActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ui.MainActivity" />
+            </activity>
+            <activity android:name=".ui.AboutActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ui.MainActivity" />
+            </activity>
+            <activity android:name=".ui.DoctorListActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ui.MainActivity" />
+            </activity>
+            <activity android:name=".ui.DoctorDetailActivity">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".ui.MainActivity" />
+            </activity>
+            <activity android:name=".ui.SavedDoctorListActivity" />
+            <activity android:name=".ui.CreateAccountActivity" />
+            <activity android:name=".ui.LoginActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <activity android:name=".ui.AilmentsListActivity" />
+            <activity android:name=".ui.AilmentDetailActivity" />
+            <activity
+                android:name=".ui.NavigationDrawerActivity"
+                android:label="@string/title_activity_navigation_drawer"
+                android:parentActivityName=".ui.BaseActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+                <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="ru.startandroid.doctorapp.ui.BaseActivity" />
+            </activity>
+            <activity android:name=".ui.BaseActivity"></activity>
+        </application>
+
+    </manifest>

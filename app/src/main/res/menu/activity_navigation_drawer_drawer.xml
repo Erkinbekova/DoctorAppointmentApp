@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Homepage" />
+
+        <item
+            android:id="@+id/nav_health"
+            android:icon="@drawable/ic_favorite_border_black_24dp"
+            android:title="Current Ailments" />
+
+        <item
+            android:id="@+id/nav_appointments"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Appointments" />
+
+        <item
+            android:id="@+id/nav_saved_doctors"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="My Doctors" />
+
+        <item
+            android:id="@+id/nav_doctor"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:title="Find a Doctor" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_about"-->
+            <!--android:icon="@drawable/ic_done_black_24dp"-->
+            <!--android:title="About CheckUp!" />-->
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>
